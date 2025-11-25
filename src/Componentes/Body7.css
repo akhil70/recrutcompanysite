@@ -6,6 +6,7 @@
   overflow: hidden;
 }
 
+/* Container */
 .testimonial-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,17 +18,30 @@
   margin-bottom: 3rem;
 }
 
+/* -------------------------------------------------
+   Badge – now a premium gradient pill
+   ------------------------------------------------- */
 .testimonial-badge {
   display: inline-block;
-  background-color: #FFE8D6;
-  color: #FF8C00;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+  /* gradient background */
+  background: linear-gradient(135deg, #FF9A8B, #FF6A88);
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(255, 108, 136, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.testimonial-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 108, 136, 0.3);
+}
+
+/* Title & description */
 .testimonial-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -49,7 +63,9 @@
   padding: 0 60px;
 }
 
-/* Navigation Buttons */
+/* -------------------------------------------------
+   Navigation Buttons – circular with hover glow
+   ------------------------------------------------- */
 .slider-nav {
   position: absolute;
   top: 50%;
@@ -83,7 +99,7 @@
   right: 0;
 }
 
-/* Testimonial Slider */
+/* Slider */
 .testimonial-slider {
   overflow: hidden;
   width: 100%;
@@ -99,7 +115,9 @@
   padding: 0 0.5rem;
 }
 
-/* Testimonial Card */
+/* -------------------------------------------------
+   Card – light‑gray background, rounded, spacious
+   ------------------------------------------------- */
 .testimonial-card {
   background-color: #f8f8f8;
   border-radius: 12px;
@@ -111,6 +129,7 @@
   min-height: 280px;
 }
 
+/* Card inner parts */
 .testimonial-content {
   display: flex;
   flex-direction: column;
@@ -149,6 +168,7 @@
   margin: 0;
 }
 
+/* Image */
 .testimonial-image-wrapper {
   display: flex;
   justify-content: center;
@@ -164,7 +184,9 @@
   border-radius: 8px;
 }
 
-/* Slider Dots */
+/* -------------------------------------------------
+   Dots indicator – subtle gray → orange active
+   ------------------------------------------------- */
 .slider-dots {
   display: flex;
   justify-content: center;
@@ -193,7 +215,9 @@
   border-radius: 6px;
 }
 
-/* Responsive Styles */
+/* -------------------------------------------------
+   Responsive breakpoints
+   ------------------------------------------------- */
 @media (max-width: 968px) {
   .testimonial-section {
     padding: 4rem 1.5rem;
